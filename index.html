@@ -3,7 +3,7 @@
 <head>  
   <title>안녕하세요</title>
   <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-  <script>Kakao.init('28f032a26c5f193ea21ffeef8b24201f');</script>
+  
 </head>
 <body>
   <p><strong>아래의 카카오톡 아이콘을 눌러 전송하세요</strong>By. Lim</p>  
@@ -14,7 +14,9 @@
 </body>
 </html>
 <script type="text/javascript">
-
+Kakao.init('28f032a26c5f193ea21ffeef8b24201f');
+Kakao.isInitialized()
+console.log('Kakao is initialized', Kakao.isInitialized());
   function sendLink() {
     Kakao.Link.sendDefault({
       objectType: 'feed',
