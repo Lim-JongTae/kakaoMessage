@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>안녕하세요</title>
+  <script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-  <p><strong></strong>By. Lim</p>  
-  <a href="#">
-    <img src="#" alt="">
+  <p><strong>아래의 카카오톡 아이콘을 눌러 전송하세요</strong>By. Lim</p>  
+  <a id="kakao-link-btn" href="javascript:sendLink()" >
+    <img src="https:/developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn-medium.png">
   </a>
 </body>
 </html>
@@ -20,9 +21,9 @@ Kakao.init('28f032a26c5f193ea21ffeef8b24201f')
       content: {
         title: 'KakaoLink Test',
         description: 'KakaoLink Test',
-        imageUrl: '#',
+        imageUrl: 'https://drive.google.com/file/d/18oQkMyVP96Mfu5bpldz3t6R8qXGBZ2EA/view?usp=sharing',
         link: {
-          webUrl: 'https//drone.pe,.kr',
+          webUrl: 'https//울산독수리.com',
           mobileWebUrl: 'https//drone.pe,.kr'
         }
       },
@@ -33,10 +34,10 @@ Kakao.init('28f032a26c5f193ea21ffeef8b24201f')
       },
       buttons: [
         {
-          title: '카카오링크로 보기',
+          title: '지금바로 보기',
           link: {
-            webUrl: 'https//drone.pe,.kr',
-            mobileWebUrl: 'http://developers.kakao.com/docs/kakao-link/overview/kakao-link-api-reference'
+            webUrl: 'https//울산독수리.com',
+            mobileWebUrl: 'https//울산독수리.com'
           }
         }
       ]
