@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p><strong></strong>By. Lim</p>  
+  <a href="#">
+    <img src="#" alt="">
+  </a>
+</body>
+</html>
+<script type="text/javascript">
+Kakao.init('28f032a26c5f193ea21ffeef8b24201f')
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: 'KakaoLink Test',
+        description: 'KakaoLink Test',
+        imageUrl: '#',
+        link: {
+          webUrl: 'https//drone.pe,.kr',
+          mobileWebUrl: 'https//drone.pe,.kr'
+        }
+      },
+      social: {
+        linkCount: 100,
+        commentCount: 1000,
+        sharedCount: 2000
+      },
+      buttons: [
+        {
+          title: '카카오링크로 보기',
+          link: {
+            webUrl: 'https//drone.pe,.kr',
+            mobileWebUrl: 'http://developers.kakao.com/docs/kakao-link/overview/kakao-link-api-reference'
+          }
+        }
+      ]
+    })
+  }
+</script>
